@@ -1,0 +1,335 @@
+:root {
+    --primary-color: #e50914;
+    --dark-color: #141414;
+    --light-color: #f4f4f4;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #999;
+}
+.netflix_header {
+    width: 100%;
+    height: 107vh;
+    position: relative;
+    background-image: url(./img/VN-vi-20220711-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.netflix_header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: inset 10px 10px 250px #000000, inset -10px 10px 250px #000000;
+}
+.header_heading {
+    position: relative;
+    height: 90px;
+    z-index: 2;
+}
+.netflix_logo {
+    width: 140px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(40% , -50%);
+}
+.btn {
+    background-color: var(--primary-color);
+    padding: 8px 10px;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn_language {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-180% , -50%);
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #eee;
+    font-size: 15px;
+}
+.language {
+    position: absolute;
+    color: #fff;
+    list-style-type: none;
+    background-color: #c6c6c6;
+    bottom: -41px;
+    left: 0;
+}
+.language_choose {
+    width: 117px;
+    text-align: center;
+    padding: 1.5px 0;
+}
+.hide {
+    display: none;
+}
+.language_choose:hover {
+    background-color: #2b88f0;
+}
+.btn_sign-in {
+    padding: 8px 20px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-60% , -50%);
+}
+.header_content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem auto 0;
+    color: #fff;
+    text-align: center;
+
+}
+.header_content .content_title {
+    font-size: 60px;
+    max-width: 800px;
+    margin-top: 10px;
+}
+.header_content .content_subtitle {
+    font-size: 25px;
+    margin: 18px 0 25px;
+    font-weight: 400;
+}
+.header_content .content_question {
+    font-size: 19px;
+}
+.inputs {
+    display: flex;
+    width: 695px;
+    height: 70px;
+    margin: 20px 0 0;
+}
+.input_email {
+    width: 500px;
+    display: block;
+    padding: 0px 10px;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+}
+.get_start {
+    width: 195px;
+    text-align: center;
+    border-radius: unset;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+.get_start i {
+   margin-left: 10px;
+   margin-right: 10px;
+}
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 10px solid #222;
+    margin-bottom: 50px;
+}
+.tab_img {
+    position: relative;
+}
+.tab-1 .tab_content {
+    margin-right: 60px;
+}
+.tab_content {
+    max-width: 550px;
+    color: #fff;
+}
+.tab_content h2 {
+    font-size: 50px;
+}
+.tab_content p {
+    margin-top: 20px;
+    font-size: 28px;
+}
+.tab_img {
+    max-width: 530px;
+}
+.tab_img img {
+    width: 100%;
+}
+video {
+    width: 72.6%;
+    position: absolute;
+    left: 71px;
+    top: 83px;
+    z-index: -1;
+}
+.tab-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.tab-2 .tab_img {
+    margin-top: 30px;
+}
+.tab-3 {
+    display: flex;
+    justify-content: flex-start;
+}
+.tab-3 .tab_content {
+    margin-top: 50px;
+    margin-left: 200px;
+}
+.tab-5 .tab_content {
+    margin-top: 50px;
+}
+.tab-5 .tab_img {
+    margin-top: 100px;
+}
+.tab-5 .tab_content p {
+    margin-bottom: 20px;
+}
+.tab-5 .tab_content a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+}
+.tab-5 .tab_content a i {
+    position: absolute;
+    top: 5px;
+    right: -40px;
+    padding: 0 15px;
+}
+.tab_question {
+    flex-direction: column;
+    color: #fff;
+}
+.tab_question h2 {
+    font-size: 50px;
+    margin: 60px 0 30px;
+}
+.tab_question .listQuestion {
+    list-style-type: none;
+}
+.listQuestion .questions {
+    width: 817px;
+    cursor: pointer;
+}
+.listQuestion .question {
+    position: relative;
+    padding: 22px 32px;
+    margin: 10px 0 1px;
+    font-size: 28px;
+    background-color: #303030;
+}
+.listQuestion .questions i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+}
+.listQuestion .questions i.rotate {
+    transform: translateY(-50%) rotate(-45deg);
+}
+.tab_question p {
+    margin-top: 60px;
+}
+.answers {
+    left: 0;
+    bottom: -20px;
+    background-color: #303030;
+    flex-direction: column;
+    padding: 22px 32px;
+    font-size: 28px;
+    display: none;
+}
+.open {
+    display: flex;
+}
+.answer {
+    margin: 10px 0 20px;
+    line-height: 30px;
+}
+
+.footer {
+    border-top: 10px solid #222;
+    display: flex;
+    flex-direction: column;
+    padding: 0 300px;
+}
+.footer a {
+    text-decoration: none;
+    margin: 60px 0 50px;
+    color: unset;
+}
+.footer a:hover,
+.footer_question:hover {
+    text-decoration: underline;
+}
+.footer_listQuestion {
+    display: flex;
+    margin-bottom: 20px;
+}
+.footer_listQuestion .footer_questions {
+    list-style-type: none;
+    margin-right: 60px;
+    font-size: 13px;
+}
+.footer_question {
+    margin: 0 0 20px 0;
+    min-width: 170px;
+    cursor: pointer;
+}
+.footer .btn_language {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    transform: unset;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #222;
+    font-size: 15px;
+    color: unset;
+    padding: 15px 0px;
+    max-width: 155px;
+}
+.footer .btn_language .language {
+    width: 100%;
+    background-color: #000;
+    border: 1px solid #222;
+    bottom: -43px;
+}
+.footer .language_choose {
+    width: 100%;
+    padding-left: 20px;
+    color: #7e7e7e;
+}
+.footer .language_choose:hover {
+    color: #fff;
+}
+.whiteBorder {
+    border-color: #fff !important;
+}
+.footer small {
+    margin: 25px 0 40px;
+}
